@@ -1,0 +1,16 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: none;
+}
+
+/* The styling below is for the construction page alone please do well to comment once done */
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+h1{
+    font-family:'dm sans';
+}
