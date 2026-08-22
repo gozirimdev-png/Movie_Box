@@ -1,16 +1,29 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: none;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: none;
 }
-
-/* The styling below is for the construction page alone please do well to comment once done */
-body{
+:root {
+  --bgMain: #be123c;
+  --mainFont: "DM Sans", sans-serif;
+}
+body {
+  font-family: var(--mainFont);
+  padding: 0 98px;
+}
+a {
+  text-decoration: none;
+  /* color: white; */
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 17px 0;
+}
+.logo, .menu, .navs{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-}
-h1{
-    font-family:'dm sans';
+    gap: 15px;
 }
