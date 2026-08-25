@@ -6,24 +6,41 @@
 :root {
   --bgMain: #be123c;
   --mainFont: "DM Sans", sans-serif;
+  --global_padding: 0 98px;
 }
 body {
+  position: absolute;
   font-family: var(--mainFont);
-  padding: 0 98px;
 }
 a {
   text-decoration: none;
-  /* color: white; */
+  color: white;
 }
 nav {
+  position: fixed;
+  min-width: 85vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 17px 0;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  padding: 17px 98px;
+  backdrop-filter: blur(2px);
+  color: white;
 }
-.logo, .menu, .navs{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
+.logo,
+.menu,
+.navs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Home Section */
+.home_section {
+  background-image: url(assets/bg_1.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
 }
